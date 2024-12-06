@@ -29,4 +29,8 @@ Para rodar este projeto localmente:
    git clone https://github.com/Paulo-Pacheco-Junior/lead-form.git
    ```
 
-2. Abra o arquivo `index.html` no seu navegador.
+2. Abra o projeto no **Visual Studio Code**.
+3. Instale a extensão **Live Server** se ainda não a tiver.
+4. Clique com o botão direito no `index.html` e escolha **Open with Live Server**.
+
+Isso deve abrir o projeto em um servidor local e você verá a página no navegador.
