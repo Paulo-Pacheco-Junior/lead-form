@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+
+  background-color: #f5f1ee;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button,
+textarea {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.6rem;
+  outline: none;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 32rem;
+  text-align: center;
+  padding: 1.8rem 3rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #ff8f1f;
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  resize: none;
+
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgba(255, 143, 31, 0.5);
+  box-shadow: 0 0 2px rgba(255, 143, 31, 0.4);
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(270deg, #fecd3d 0%, #ff8a33 100%);
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.9;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #ff9240 0%, #f4ba0d 25%, #ff6d00 100%);
+  transform: translateY(-1px);
+}
+
+button:not(:disabled):active {
+  transform: translateY(2px);
+}
+
+.error {
+  margin-top: -10px;
+  text-align: left;
+  font-size: 0.875rem;
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+.success {
+  margin-top: 1.25rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  label {
+    font-size: 0.7rem;
+    margin-bottom: 0.1rem;
+  }
+
+  input,
+  textarea {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .error {
+    font-size: 0.8rem;
+  }
+
+  .success {
+    font-size: 0.8rem;
+  }
+}
